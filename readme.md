@@ -14,5 +14,6 @@
 [实验三：在元宇宙场景使用数字钱包登录公链和读写数据](lab3/readme.md)。本实验对可视化场景增加数字钱包的支持，并将有价值的数据更新到前置服务和Web3公链。后续可以进一步将工业场景的数字化资产，如工艺参数和设备配置优化方案、设备远程诊断咨询等NFT化，实现元宇宙资产的增值。可探索的应用方向：远程运维、精益生产等。
 
 
-## **实验贡献者**
+## [实验贡献者](https://github.com/alezhao/microsoft-devhack/graphs/contributors)
 本动手实验基于 [Build mixed reality digital twins with Azure Digital Twins and Unity - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/build-mixed-reality-azure-digital-twins-unity/) 在线课程，并由微软中国的多位专家 Alex Zhao, Yingguang Mei, Wayne Wang 和 Warren Zhou 修改和完善而来。
+
