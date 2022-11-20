@@ -518,42 +518,41 @@
 
        - 当交易结束时，交易历史被重新读取，此时点击右边列表的镜像按钮就可以取得已经上链的NFT资产内容
          ![](pics/asset_result.jpg)
-
-     ```csharp
-         public void CallGetHistory()
-         {
-           gameObject.GetComponent<FunctionCalls>().CallGetCollection(UserName, r =>
-           {
-               var newitems = r.response.OrderByDescending(x => x.NFTMetadataOwner.metadata.id).Take(PlannedItemsCount).ToList();
-               if (RecentNFCButtons!=null)
-               {
-                   foreach (var buttonsToDelete in RecentNFCButtons)
+         
+       - 根据需要您也可以将自己感兴趣的内容比如截图文件按照同样的方式进行保存
+         
+             public void CallGetHistory()
+             {
+                   gameObject.GetComponent<FunctionCalls>().CallGetCollection(UserName, r =>
                    {
-                       buttonsToDelete.transform.SetParent(null);
-                       Destroy(buttonsToDelete.gameObject);
-                   }
-               }
-               RecentNFCButtons= newitems.Select(item =>
-               {
-                   var ng = Instantiate(template.gameObject, objectCollection.transform);
-                   var hbtn = ng.GetComponent<HistoryButtonItem>();
-                   var obt = ng.GetComponent<ButtonConfigHelper>();
-                   hbtn.AssetUrl = item.NFTMetadataOwner.metadata.image_url;
-                   obt.MainLabelText = $"Id:{item.NFTMetadataOwner.metadata.id}\r\nOwner:{item.NFTMetadataOwner.owner}";
-                   ng.SetActive(true);
-                   return hbtn;
-               }
-               ).ToArray();
-               
-               objectCollection.UpdateCollection();
-           });
-     ```
-
-
-          }
-    
-      ```
-      根据需要您也可以将自己感兴趣的内容比如截图文件按照同样的方式进行保存
+                       var newitems = r.response.OrderByDescending(x => 	   x.NFTMetadataOwner.metadata.id).Take(PlannedItemsCount).ToList();
+                       if (RecentNFCButtons!=null)
+                       {
+                           foreach (var buttonsToDelete in RecentNFCButtons)
+                           {
+                               buttonsToDelete.transform.SetParent(null);
+                               Destroy(buttonsToDelete.gameObject);
+                           }
+                       }
+                       RecentNFCButtons= newitems.Select(item =>
+                       {
+                           var ng = Instantiate(template.gameObject, objectCollection.transform);
+                           var hbtn = ng.GetComponent<HistoryButtonItem>();
+                           var obt = ng.GetComponent<ButtonConfigHelper>();
+                           hbtn.AssetUrl = item.NFTMetadataOwner.metadata.image_url;
+                           obt.MainLabelText = $"Id:{item.NFTMetadataOwner.metadata.id}\r\nOwner:{item.NFTMetadataOwner.owner}";
+                           ng.SetActive(true);
+                           return hbtn;
+                       }
+                       ).ToArray();
+             		  objectCollection.UpdateCollection();
+               });
+             }
+         
+         ![](pics/nftlist_unity.jpg)
+         
+         
+     
 
 
 ​        至此，您已经完成了实验三的所有步骤。在元宇宙场景使用数字钱包登录公链和读写数据，恭喜您已经完成所有工业园宇宙实验。
