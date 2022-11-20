@@ -34,64 +34,64 @@
 
    - 官网下载钱包浏览器插件，访问[MetaMask官网](https://metamask.io/)，选择右上角Download，选择Edge版本，下载到您个人PC上。
 
-     <img src="D:/work/DevHack/devhack-app/md/web3-withUnity/pics/metamask.jpg" alt="metamask" style="zoom:50%;" />
+     <img src="pics/metamask.jpg" alt="metamask" style="zoom:50%;" />
 
    - 下载后，在Edge浏览器上方打开MetaMask插件（小狐狸图标），点击创建钱包，密码，复制**[钱包地址]**到本地记事本。
 
      (例如下方划红线的hash code，点击并复制)
 
-     <img src="D:/work/DevHack/devhack-app/md/web3-withUnity/pics/wallet-1.jpg" style="zoom:50%;" />
+     <img src="pics/wallet-1.jpg" style="zoom:50%;" />
 
    - 点击右上方...，选择**Account Details**，选择**Export Private Key**，保存**[钱包私钥]**到本地记事本。
 
-     <img src="D:/work/DevHack/devhack-app/md/web3-withUnity/pics/wallet-4.jpg" style="zoom:50%;" />
+     <img src="pics/wallet-4.jpg" style="zoom:50%;" />
 
    - 点击钱包上方网络部分，选择**Add Network**
 
-     <img src="D:/work/DevHack/devhack-app/md/web3-withUnity/pics/wallet-2.jpg" style="zoom:50%;" />
+     <img src="pics/wallet-2.jpg" style="zoom:50%;" />
 
    - 在打开的网页里，选择左侧栏Advanced，下拉选中显示测试网络。
 
    - 再回到MetaMask插件，点击上方网络部分，就可以看到**Goerli test network**了，选择此测试网络。
 
-     <img src="D:/work/DevHack/devhack-app/md/web3-withUnity/pics/wallet-3.jpg" style="zoom:50%;" />
+     <img src="pics/wallet-3.jpg" style="zoom:50%;" />
 
    - 访问 [GoerliFaucet]([Goerli Faucet](https://goerlifaucet.com/))，输入你的钱包地址Hash Code，选择Send Me ETH，每24小时，可以给你的钱包的Goerli test network里发0.2GoerliETH的测试币，可能需要VPN才能发送成功。1分钟之内就能在钱包里收到此测试币，用来支付后续实验的Gas Fee。
 
-     ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/GoerliETH.jpg)
+     ![](pics/GoerliETH.jpg)
 
 2. 创建NFT收藏夹
 
    - 访问 [ThirdWeb](https://thirdweb.com/)，点击**Start Building**。
 
-     ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/thirdweb-1.jpg)
+     ![](pics/thirdweb-1.jpg)
 
 
    - 点击右上角**Connect Wallet**，选择**MetaMask**弹出**Edge**插件后，点击**Confirm**，用钱包登录**ThirdWeb**。
 
-     ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/thirdweb-2.jpg)
+     ![](pics/thirdweb-2.jpg)
 
 
    - 点击右上角**Deploy new contract**，转到Contract页面后，在**I want to get started with a prebuilt contract**下方点击**Get Started**。
 
-     ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/thirdweb-3.jpg)
+     ![](pics/thirdweb-3.jpg)
 
 
    - 找到**NFT Collection**，点击右侧小箭头部署合约。
 
-     ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/thirdweb-4.jpg)
+     ![](pics/thirdweb-4.jpg)
 
 
    - 转到 [Dashboard](https://thirdweb.com/dashboard) 页面，进入刚才创建好的NFT Collection ，点击**Code**，记录*[NFT收藏夹合约地址]*。
 
-     ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/thirdweb-6.jpg)
+     ![](pics/thirdweb-6.jpg)
 
 
 3. 部署本地合约到Azure Function
 
    - 打开本地**Ubuntu 20.04 Console**，输入**/mnt/[drive]/[project path]** 回车，然后输入 **code .** 
 
-     ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/wsl-1.jpg)
+     ![](pics/wsl-1.jpg)
 
 
    - 本地创建Azure Function并调试合约，参考 [Create a function in Azure with Python using Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python?pivots=python-mode-configuration) 
@@ -101,7 +101,7 @@
 
   - 在本地function根目录下的**requirement.txt**里添加**thirdweb-sdk**
 
-    ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/function-1.jpg)
+    ![](pics/function-1.jpg)
 
   - 创建Wallet Login Thirdweb Function，输入自定义*[web3funclogin]*，并输入以下代码。
 
@@ -272,13 +272,13 @@
 
   需要创建python3的虚拟环境，按文档说明进行本地Debug。(记得在py脚本里加断点)
 
-  ![	](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/function-2.jpg)
+  ![	](pics/function-2.jpg)
 
   测试Wallet Login Function 和 List NFT Function
 
   - 打开**Postman**，点击**Import**
 
-  <img src="D:/work/DevHack/devhack-app/md/web3-withUnity/pics/postman-1.jpg" style="zoom:50%;" />
+  <img src="pics/postman-1.jpg" style="zoom:50%;" />
 
   - 选择**Raw text**输入以下脚本，替换*[自定义用户]*，点击**Import**
 
@@ -366,7 +366,7 @@
 
   - 在另一个目录下，创建一个新Python文件，用来测试本地Mint NFT Function。输入**code .** 打开另一个vscode
 
-    ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/wsl-2.jpg)
+    ![](pics/wsl-2.jpg)
 
   - 在目录下创建文件夹**images**，放一张测试JPG图片。
 
@@ -390,7 +390,7 @@
 
   - 在本地Function App里Debug。
 
-    ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/function-3.jpg)
+    ![](pics/function-3.jpg)
 
 - Deplay 本地 Function on Azure
 
@@ -398,13 +398,13 @@
 
   - 同样用**Postman**和VSCode 测试Azure FUnction，把**localhost:7071** 替换成Azure Function Endpoint即可，例如**web3funcs.azurewebsites.net**
 
-    ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/function-4.jpg)
+    ![](pics/function-4.jpg)
 
     
 
 - 打开thirdweb的，您自己创建的收藏夹，将会看到刚创建好的NFT。
 
-  ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/nft-c-1.jpg)
+  ![](pics/nft-c-1.jpg)
 
 - 在DevHack专用NFT市场进行挂售，所用区块链网络均为测试网络，Gas Fee均为测试币。
 
@@ -412,7 +412,7 @@
 
   市场链接 [DevHack Marketplace](https://thirdweb.com/goerli/0xd5d707661FD86645E94b9Ae1069e31caB97c5eFE/listings)
 
-  ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/mkt-1.jpg)
+  ![](pics/mkt-1.jpg)
 
 5. 在Unity项目中启用的NFT集成的登录流程
 
@@ -420,12 +420,12 @@
    - 创建新的登录scene. 这里将其起名为`LoginScene`
    - 打开`File` ->`Build Settings` 确定 将`LoginScene` 加入列表并且作为启动项（列表中的第一个）
 
-   ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/building_scene_setting.jpg)
+   ![](pics/building_scene_setting.jpg)
 
    - 打开LoginScene 将 `UIPrefesbs/Prefebs/LoginUI.prefeb` 拖拽入Scene,
 
      - 此时界面示意
-       ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/loginscene_view.jpg)
+       ![](pics/loginscene_view.jpg)
 
        Note:Login 按钮默认为不可见
 
@@ -477,7 +477,7 @@
    - 将另一个Prefeb 'ReportAbnormal' 加入`Root/Bing Maps Operate` 并确认其位置为 `0,0,0`
 
    - 此时在地图下方将显示一个红色按钮。
-     ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/bing_red_button.jpg)
+     ![](pics/bing_red_button.jpg)
 
    - 确认按钮对 `ReportAbnormalUIController.cs`中代码的事件绑定
 
@@ -485,7 +485,7 @@
 
    - 当红色按钮被按下, 应用将保存当前收到的运行数据快照 并且保存到NFT，
      并且进行交易历史刷新
-     ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/mint_result.jpg)
+     ![](pics/mint_result.jpg)
 
      - 代码解析
        获取最近的传入信息并且序列化传输到NFT Mint网关，最后刷新
@@ -517,7 +517,7 @@
      ```
 
        - 当交易结束时，交易历史被重新读取，此时点击右边列表的镜像按钮就可以取得已经上链的NFT资产内容
-         ![](D:/work/DevHack/devhack-app/md/web3-withUnity/pics/asset_result.jpg)
+         ![](pics/asset_result.jpg)
 
      ```csharp
          public void CallGetHistory()
