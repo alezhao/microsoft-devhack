@@ -155,7 +155,7 @@
     cd <path for azuredeploy.bicep>
     ```
 
-    <>的内容请替换为您电脑上的 AzureDeploy.bicep 文件所在的路径。如果您下载了本代码库，AzureDeploy.bicep 应该在根目录的 ARM-Template 目录下。bicep是ARM模板所支持的格式之一。
+    <>的内容请替换为您电脑上的 AzureDeploy.bicep 文件所在的路径。如果您下载了本代码库，AzureDeploy.bicep 应该在根目录下的 code/ARM-Template 目录下。bicep是ARM模板所支持的格式之一。
     
 16. 在命令行中输入如下命令以登录Azure：
     
