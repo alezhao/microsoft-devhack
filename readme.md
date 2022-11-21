@@ -1,4 +1,4 @@
-# **“微软工业元宇宙”动手实验指导（v0.1）**
+# **“微软工业元宇宙”动手实验指导（v1.0）**
 
 ## **实验目标**
 
@@ -19,5 +19,5 @@
   <img src="https://contrib.rocks/image?repo=alezhao/microsoft-devhack" />
 </a>
 
-本动手实验基于 [Build mixed reality digital twins with Azure Digital Twins and Unity - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/build-mixed-reality-azure-digital-twins-unity/) 在线课程，并由微软中国的多位专家 Alex Zhao, Yingguang Mei, Wayne Wang， Warren Zhou 和Zhen Guan 修改和完善而来。
+本动手实验基于 [Build mixed reality digital twins with Azure Digital Twins and Unity - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/build-mixed-reality-azure-digital-twins-unity/) 在线课程，并由微软中国的多位专家 Alex Zhao, Yingguang Mei, Wayne Wang， Warren Zhou 和 Zhen Guan 修改和完善而来。
 

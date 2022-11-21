@@ -1,4 +1,4 @@
-# **“微软工业元宇宙”动手实验指导（v0.1）**
+# **“微软工业元宇宙”动手实验指导（v1.0）**
 
 ## **实验目标**
 
@@ -20,13 +20,16 @@
 
 ### **实验流程**
 1. 打开Visual Studio Code。在”View”菜单中选择”Command Palette…”菜单项。
-![Command Palette](/pics/lab1-palette.png "Lab 1 - Step 1")
+
+    ![Command Palette](/pics/lab1-palette.png "Lab 1 - Step 1")
 
 2. 在命令行中输入`dtdl`，并在候选项中选择”DTDL: Create Interface”。
-![dtdl create](/pics/lab1-create.png "Lab 1 - Step 2")
 
-1. 依照向导，依次输入Interface Name，本例中为"ADT_Turbine"；如果您没指定过模型文件夹，需要指定一个文件夹用以存放编写的模型；一个根据basic template创建出来的默认模型如下图。这其中，`@context`代表了使用的是DTDL v2的语法，`@id`是根据您输入的 Interface Name 自动创建的唯一的模型名称。
-![basic model](/pics/lab1-basicmodel.png "Lab 1 - Step 3")
+    ![dtdl create](/pics/lab1-create.png "Lab 1 - Step 2")
+
+3. 依照向导，依次输入Interface Name，本例中为"ADT_Turbine"；如果您没指定过模型文件夹，需要指定一个文件夹用以存放编写的模型；一个根据basic template创建出来的默认模型如下图。这其中，`@context`代表了使用的是DTDL v2的语法，`@id`是根据您输入的 Interface Name 自动创建的唯一的模型名称。
+   
+    ![basic model](/pics/lab1-basicmodel.png "Lab 1 - Step 3")
 
 4. 模型可以包含 Property, Telemetry 和 Command 三种元素。本例中只会使用到前两种。请您修改contents部分，使得这个模型具有：
     - 一个名叫TurbineID的Property，类型为string，值可修改；
@@ -40,6 +43,7 @@
     - 一个名叫Power的Telemetry，类型为double。
 
     您可以键入`dtp`和`dtt`来导入Property和Telemetry的代码片段，帮助您快速编写这些元素。可以看到DTDL Editor这个插件具有语法校验功能，不符合DTDL语法的会以红色提示。
+    
     ![code snippet](/pics/lab1-snippet.png "Lab 1 - Step 4")
 
 5. 最终您的DTDL模型应该是如下这样。保存并退出。
