@@ -36,7 +36,7 @@
 
 ### **实验流程**
 1. [创建 Bing Map 的账号](https://learn.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account)，[获取 Bing Map 的开发者 Key](https://learn.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/getting-a-bing-maps-key)
-2. 下载 Unity 项目课件：
+2. 下载 Unity 项目课件：(https://github.com/alezhao/microsoft-devhack/tree/main/code)
 3. 打开 Unity 工程
   - 在PC的根目录下建立一个目录，把课件全部解压到该目录（保证项目目录的层次越少越好）；本次实验会用到二个工程：**Unity-Project** 和 **Device-SImulator**
   - 打开 Unity Hub，选择 **Projects** 标签下的 **Open** 按钮
