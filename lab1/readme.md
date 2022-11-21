@@ -111,7 +111,7 @@
 }
 ```
 
-6. **(可选)** 如果您是在一个不带有语法检查的编辑环境下编写的DTDL模型的json文件，在导入到云端服务并创建数字孪生体之前，需要先对它验证是否符合DTDL的语法。一个简单的方法是，使用.Net Core编译一个使用了“Azure Digital Twins Parser”的开源工具DTDL Validator，并用命令行验证我们的模型文件的正确性。请参考“实验环境与准备”安装.Net Core，并从Github获得DTDL Validator的工程源码。
+6. **（可选）** 如果您是在一个不带有语法检查的编辑环境下编写的DTDL模型的json文件，在导入到云端服务并创建数字孪生体之前，需要先对它验证是否符合DTDL的语法。一个简单的方法是，使用.Net Core编译一个使用了“Azure Digital Twins Parser”的开源工具DTDL Validator，并用命令行验证我们的模型文件的正确性。请参考“实验环境与准备”安装.Net Core，并从Github获得DTDL Validator的工程源码。
 
 7. **（可选）** 请使用如下语句，在DTDL Validator项目的根目录生成命令行工具：
     ```console
