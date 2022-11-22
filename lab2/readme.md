@@ -74,36 +74,25 @@
     ![](/pics/lab2-29.png)
     这时，在 Hierarchy 窗口，可以看到已经加载了一些场景元素（Unity 称之为 “Game Object”）
     ![](/pics/lab2-30.png)
-    
   -  在 Project 窗口进入 Assets/Art/Prefabs, 把 **Bing Maps Operate** 蓝色小方块 （Unity 称之为 “Prefab”）用鼠标拖拽到 Hierarchy 窗口下的 Main Scene 结点下
-    
-    
-     ![](/pics/lab2-31.png) 
-    
+    ![](/pics/lab2-31.png)
     操作完成后，在 Hierarchy 窗口下的布局如下图所示：
     ![](/pics/lab2-32.png)
     在 Scene 窗口，你可以看到有风车、地图底座等3D模型被加载进来了；（**可选**：你可以在 Gizmos 下拉菜单里面拖动 3D Icons 边上的横条来调整 3D 图标的大小）
     ![](/pics/lab2-33.png)
-    
   - 在 Hierarchy 窗口，选中 Bing Maps Operate 这个 Game Object，这时在 Inspector 窗口就会出现它的属性，在 **Developer Key** 的地方输入之前获得的 **Bing Map Key**
     ![](/pics/lab2-34.png)
-    
   - 使用 Ctrl-S 组合键，保存场景。这个时候，Hierarchy 窗口里 MainScene 右侧的星号*消失了，代表场景已经被保存
-
   - **可选**：此时可以点击 Unity 编辑器上方的 **Play** 按钮，运行测试一下这个工程。在 Game 窗口里面，正常情况下已经可以看到地图和转动的风车都被正常加载出来了
     ![](/pics/lab2-35.png)
-    
 - 在 Project 窗口进入 Assets/UIPrefabs/Prefabs, 把 **OperateSceneUI** 用鼠标拖拽到 Hierarchy 窗口下的 Main Scene 结点下 
 
     ![](/pics/lab2-36.png)
-    
 - 在 Project 窗口进入 Assets/ADTPrefabs, 把 **ADTConnection** 和 **ADTTubineAlertController** 二个 prefab 用鼠标拖拽到 Hierarchy 窗口下的 Main Scene 结点下 
 
     ![](/pics/lab2-37.png)
-    
 - 完成后 Hierarchy 窗口下的场景布局如下图所示，记得使用 Ctrl+S 保存场景
     ![](/pics/lab2-38.png)
-
 6. 在 Unity 工程里设置 ADT 参数
 - 打开之前生成的 Azure_config_settings.txt 文件中，找到 **signalRNegotiatePath** 后面的字符串，拷贝这个字符串；
 
