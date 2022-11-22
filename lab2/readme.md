@@ -89,6 +89,7 @@
 
     ![](/pics/lab2-36.png)
 - 在 Project 窗口进入 Assets/ADTPrefabs, 把 **ADTConnection** 和 **ADTTubineAlertController** 二个 prefab 用鼠标拖拽到 Hierarchy 窗口下的 Main Scene 结点下 
+-
     ![](/pics/lab2-37.png)
 - 完成后 Hierarchy 窗口下的场景布局如下图所示，记得使用 Ctrl+S 保存场景
     ![](/pics/lab2-38.png)
