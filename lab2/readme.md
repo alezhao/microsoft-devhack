@@ -131,7 +131,7 @@
 - Ctrl+S 保存场景；Unity 工程部分已经全部配置完成！
 
   **提示：** 
-    - 如果在配置过程中遇到困难无法完成，可以在 Project 窗口进入 Assets/Scenes, 双击 **MainSceneFinished** 打开这个场景。这个场景已经基本完成，只需要添加绑定 ADT 数据即可！
+    - 如果在配置过程中遇到困难无法完成，可以在 Project 窗口进入 Assets/Scenes, 双击 **MainSceneFinished** 打开这个场景。这个是完成的本实验场景文件，只需要添加绑定 ADT 数据即可！
     - 目录下还有另外一个场景文件 **CompletedScene**，这个是包含实验三全部内容的最终场景
 7. 启动风车模拟数据
 - 用 Visual Studio 2022 社区版，打开风车模拟器工程 “**DeviceSimulator**”
