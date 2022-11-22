@@ -17,15 +17,15 @@
 - HoloLens的开发没有单独的SDK，使用Visual Studio 和 Windows 10 SDK即可。
   - 下载并且安装 [Visual Studio 2022 社区版本](https://visualstudio.microsoft.com/zh-hans/downloads/)。请确保安装以下模块：**.NET 桌面开发、使用 C++ 的桌面开发、通用 Windows 平台 (UWP) 开发**
       ![](/pics/lab2-01.png)
-  - 在安装Visual Studio 2022 社区版本过程中，勾选 “**Game development with C++**”模块，检查一下右侧是否已经勾选了最新的 Windows 10 SDK
+  - 勾选 “**Game development with C++**”模块，检查一下右侧是否已经勾选了最新的 Windows 10 SDK
       ![](/pics/lab2-02.png)
-  - 在安装Visual Studio 2022 社区版本过程中，勾选 “**Game Development with Unity**”模块，确保右侧没有勾选“**Unity Hub**”
+  - 勾选 “**Game Development with Unity**”模块，确保右侧没有勾选“**Unity Hub**”
       ![](/pics/lab2-03.png)
 - Unity 是市面上领先的实时开发引擎之一，它支持多种硬件平台的开发。本实验我们使用Unity来开发HoloLens应用 
   - 安装 [**Unity Hub**](https://unity3d.com/get-unity/download).
   - 打开 Unity Hub，选择 **Installs** 标签，然后选择 **Install Editor**
        ![](/pics/lab2-04.png)
-  - 选择最新的 **Unity 2020.3** 版本（边上有LTS标记）然后点击 **Install** 按钮
+  - 选择最新的 **Unity 2020.3** 版本（边上有 LTS 标记）然后点击 **Install** 按钮
        ![](/pics/lab2-05.png)
   - 选择 **“Universal Windows Platform Build Support”** 和 **“Windows Build Support(IL2CPP)”** 平台，然后点击 **Install** 按钮开始安装
        ![](/pics/lab2-06.png)
@@ -48,7 +48,7 @@
     - 切换版本的时候，出现警告框只需要选择 **Continue** 即可
          ![](/pics/lab2-23.png)
 4. 配置 Unity 编辑器
-  - 认识 Unity 编辑器的各个功能区窗口，可按自己习惯改变功能区的分布
+  - 认识 Unity 编辑器的各个功能区窗口，可按自己的喜好改变功能区的分布
        ![](/pics/lab2-24.png)
        
   - 打开 **Edit/Preference** 菜单，进入 **Externals Tool**，设置外部脚本编辑器为已经安装的 **Visual Studio 2022 社区版**
@@ -67,7 +67,7 @@
     | Build and Run On    | Local Machine |
     | Build configuration | Release       | 
 
-  - 在 Build Settings 窗口选择 **Player Settings**；打开 Player Settings 窗口后，选择最下端的 **XR-Plugin Management**，在 Universal Windows Platform 的Tab下，选中 **OpenXR** （Microsoft HoloLens Feature Group 会默认选中）
+  - 在 Build Settings 窗口选择 **Player Settings**；打开 Player Settings 窗口后，选择最下端的 **XR-Plugin Management**，在 Universal Windows Platform 的 Tab下，选中 **OpenXR** （Microsoft HoloLens Feature Group 会默认选中）
     ![](/pics/lab2-28.png)
 5. 配置 Unity 工程
   - 在 Project 窗口进入 Assets/Scenes, 双击 **Main Scene** 打开这个场景
@@ -78,7 +78,7 @@
     ![](/pics/lab2-31.png)
     操作完成后，在 Hierarchy 窗口下的布局如下图所示：
     ![](/pics/lab2-32.png)
-    在 Scene 窗口，你也可以看到有风车、地图底座等3D模型被加载进来了；（**可选**：你可以在 Gizmos 下拉菜单里面拖动 3D Icons 边上的横条来调整3D图标的大小）
+    在 Scene 窗口，你可以看到有风车、地图底座等3D模型被加载进来了；（**可选**：你可以在 Gizmos 下拉菜单里面拖动 3D Icons 边上的横条来调整 3D 图标的大小）
     ![](/pics/lab2-33.png)
   - 在 Hierarchy 窗口，选中 Bing Maps Operate 这个 Game Object，这时在 Inspector 窗口就会出现它的属性，在 **Developer Key** 的地方输入之前获得的 **Bing Map Key**
     ![](/pics/lab2-34.png)
@@ -94,7 +94,7 @@
 6. 在 Unity 工程里设置 ADT 参数
 - 打开之前生成的 Azure_config_settings.txt 文件中，找到 **signalRNegotiatePath** 后面的字符串，拷贝这个字符串；
 
-    **注意：**只需要拷贝 “**/negotiate**” 之前的字符串；比如下面的 signalRNegotiatePath
+    **注意：** 只需要拷贝 “**/negotiate**” 之前的字符串；比如下面的 signalRNegotiatePath
 
     ```json
       "signalRNegotiatePath": "https://myprojfuncappxxxxxxxxxx.azurewebsites.net/api/negotiate"
@@ -112,6 +112,7 @@
   
 - 在 Project 窗口选中刚才生成的 ADTRestAPICredentials 文件，在 Inspector 窗口中可以看到有4个参数需要输入
     ![](/pics/lab2-42.png)
+  
   打开之前生成的 Azure_config_settings.txt 和 AppCredentials.txt 文件，按如下表格依次填入这4个参数
 
     | 文件名                    | 文件中的参数名 | Unity 中的参数名 |
@@ -131,7 +132,7 @@
 - 用 Visual Studio 2022 社区版，打开风车模拟器工程 “**DeviceSimulator**”
   ![](/pics/lab2-50.png)
   
-- 打开 "AzureIoTHub.cs"文件，我们需要指定此处的 **iotHubConnectionString** 和 **adtInstanceUrl** 2个参数
+- 打开 "AzureIoTHub.cs" 文件，我们需要指定此处的 **iotHubConnectionString** 和 **adtInstanceUrl** 2个参数
   ```csharp
       public static class AzureIoTHub
       {
