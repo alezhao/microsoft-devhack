@@ -123,7 +123,8 @@
     | AppCredentials.txt        | tenant         | Tenant Id        |
 - 在 Hierarchy 窗口，选中 ADTTurbineAlertController 这个 Game Object, 确保在 Inspector窗口里看到 **ADT Turbine Alert Controller (Script)** 这个属性；把刚才的 ADTRestAPICredentials 文件从 Project 窗口拖拽到 ADT Turbine Alert Controller (Script) 下面的 **Adt Connection Info** 项右侧的空格里面
     ![](/pics/lab2-43.png)
-  成功后，界面如下所示：
+  成功后，界面如下所示: 
+
     ![](/pics/lab2-44.png)
 - Ctrl+S 保存场景；Unity 工程部分已经全部配置完成！
 
@@ -190,7 +191,7 @@
     ![](/pics/lab2-70.png) 
   - 在弹出的文件浏览对话框中，鼠标右键创建一个新的目录夹 **App** （与 Assets 目录是同级目录）；选中这个目录夹后点击 **Select Folder** 按钮；Unity开始构建项目
     ![](/pics/lab2-71.png) 
-  - Unity 构建完成后，进入这个目录夹；此时这个目录夹内已经生成了一个 Win10 的 UWP 项目。双击 solution 文件，在 Visual Studio 2022 社区版中打开这个项目
+  - Unity 构建完成后，进入这个目录夹；此时这个目录夹内已经生成了一个 Win10 的 UWP 项目。双击 solution 文件，在 Visual Studio 2022 社区版中打开这个项目 
     ![](/pics/lab2-72.png)  
   - 在  Visual Studio 里选择菜单 **Project/Publish/Create App Package**，在 Package 的设置选项里（如下图），选择 **ARM64（Release(ARM64))**, 按 **Create** 按钮开始生成安装包
     ![](/pics/lab2-73.png)  
