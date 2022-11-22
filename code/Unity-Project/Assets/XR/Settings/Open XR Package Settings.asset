@@ -585,9 +585,7 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: 
   features:
-  - {fileID: -3479194989959583604}
   - {fileID: 1531893483889604754}
-  - {fileID: 6592046564631436384}
   - {fileID: 4188277996084297558}
   - {fileID: 3128028973606634535}
   - {fileID: 8097170650319254599}
@@ -600,6 +598,8 @@ MonoBehaviour:
   - {fileID: 7064903131781541507}
   - {fileID: -5880172502650916744}
   - {fileID: -2032165970755933375}
+  - {fileID: -3479194989959583604}
+  - {fileID: 6592046564631436384}
   m_renderMode: 1
   m_depthSubmissionMode: 2
 --- !u!114 &3128028973606634535
