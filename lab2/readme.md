@@ -86,6 +86,7 @@
   - **可选**：此时可以点击 Unity 编辑器上方的 **Play** 按钮，运行测试一下这个工程。在 Game 窗口里面，正常情况下已经可以看到地图和转动的风车都被正常加载出来了
     ![](/pics/lab2-35.png)
 - 在 Project 窗口进入 Assets/UIPrefabs/Prefabs, 把 **OperateSceneUI** 用鼠标拖拽到 Hierarchy 窗口下的 Main Scene 结点下 
+
     ![](/pics/lab2-36.png)
 - 在 Project 窗口进入 Assets/ADTPrefabs, 把 **ADTConnection** 和 **ADTTubineAlertController** 二个 prefab 用鼠标拖拽到 Hierarchy 窗口下的 Main Scene 结点下 
     ![](/pics/lab2-37.png)
@@ -192,6 +193,7 @@
   - 在弹出的文件浏览对话框中，鼠标右键创建一个新的目录夹 **App** （与 Assets 目录是同级目录）；选中这个目录夹后点击 **Select Folder** 按钮；Unity开始构建项目
     ![](/pics/lab2-71.png) 
   - Unity 构建完成后，进入这个目录夹；此时这个目录夹内已经生成了一个 Win10 的 UWP 项目。双击 solution 文件，在 Visual Studio 2022 社区版中打开这个项目 
+  
     ![](/pics/lab2-72.png)  
   - 在  Visual Studio 里选择菜单 **Project/Publish/Create App Package**，在 Package 的设置选项里（如下图），选择 **ARM64（Release(ARM64))**, 按 **Create** 按钮开始生成安装包
     ![](/pics/lab2-73.png)  
