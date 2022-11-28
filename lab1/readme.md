@@ -17,6 +17,7 @@
 - 虽然使用任何一种文本编辑器都可以编写DTDL模型文件，但我们推荐先安装 [Visual Studio Code](https://code.visualstudio.com/Download)，再安装和使用它的扩展插件 [DTDL Editor for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-dtdl) 来编写DTDL模型。后者可以使用预定义的模板和代码片段，以及语法检查，帮助您更高效地编写DTDL文件。
 - **（可选）** 如果您不是在带有DTDL语法检查功能的环境下编辑的模型文件，在导入到Azure Digital Twins服务之前，我们建议使用 [DTDL Validator](https://github.com/Azure-Samples/DTDL-Validator) 这个开源工具来验证一下您的模型定义是否符合DTDL的语法。编译和运行该工具需要先安装 [.Net SDK 6.0 或 .Net Core 3.1](https://dotnet.microsoft.com/en-us/download/visual-studio-sdks) 。
 - 您需要一个国际版的Azure订阅来创建Azure Digital Twins服务。如果您还没有，请在 [这里](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/) 免费申请一个试用账号。
+- 您需要 [Azure CLI](https://learn.microsoft.com/zh-cn/cli/azure/install-azure-cli) 以在 Windows PowerShell 中运行命令行命令执行跟 Azure 有关的操作。无论您的操作系统是 Windows、Linux 或是 macOS，您都可以选择相应的平台安装。
 
 ### **实验流程**
 1. 打开Visual Studio Code。在”View”菜单中选择”Command Palette…”菜单项。
@@ -178,7 +179,7 @@
     $projectname="myproj"
     $appreg="myappreg"
     ```
-    PS中，变量名以$为前缀。您也可以自定义变量值为您希望的字符串。但请注意，字符串不能超过14个字符，而且只能使用小写字母、数字和-。
+    PS中，变量名以$为前缀。您也可以自定义变量值为您希望的字符串。但请注意，字符串不能超过14个字符，而且只能使用小写字母和数字。
 
 18. 输入下列命令来创建一个服务主体（Service Principle）以及它访问 Azure 资源的权限角色：
     ```console
