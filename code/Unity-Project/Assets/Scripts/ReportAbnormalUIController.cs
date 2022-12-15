@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Windows.WebCam;
-using static UnityEditor.Progress;
 
 public class ReportAbnormalUIController : MonoBehaviour
 {
